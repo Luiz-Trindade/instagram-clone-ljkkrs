@@ -28,6 +28,28 @@
 </template>
 
 <script setup lang="ts">
-import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { addCircle, ellipse, home, person, search, square, triangle, videocam } from 'ionicons/icons';
+import {
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
+  IonIcon,
+  IonPage,
+  IonRouterOutlet
+} from '@ionic/vue';
+import {
+  home,
+  search,
+  addCircle,
+  videocam,
+  person
+} from 'ionicons/icons';
 </script>
+
+<style scoped>
+ion-tab-button {
+  --color: white;
+  /* ícones não selecionados */
+  --color-selected: var(--ion-color-primary);
+  /* ícone da aba ativa */
+}
+</style>

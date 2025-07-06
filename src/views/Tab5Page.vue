@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="false">
       <!-- Loop através dos posts -->
       <ion-card v-for="post in posts" :key="post.id"
         style="margin: 0; border-radius: 0; box-shadow: none; margin-bottom: 20px;">
