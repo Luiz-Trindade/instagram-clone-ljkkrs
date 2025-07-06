@@ -47,7 +47,7 @@ import {
 
 <style scoped>
 ion-tab-button {
-  --color: white;
+  --color: auto;
   /* ícones não selecionados */
   --color-selected: var(--ion-color-primary);
   /* ícone da aba ativa */
