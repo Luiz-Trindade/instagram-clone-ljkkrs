@@ -12,7 +12,7 @@ import { onMounted } from 'vue';
 onMounted(async () => {
   // Oculta a status bar (toolbar do Android)
   await StatusBar.setOverlaysWebView({ overlay: true });
-  await StatusBar.setStyle({ style: Style.Light }); // Opcional: define o estilo
+  // await StatusBar.setStyle({ style: Style.Light }); // Opcional: define o estilo
 });
 </script>
 
