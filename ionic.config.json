@@ -1,0 +1,8 @@
+{
+  "name": "instagram-clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "81022a6a"
+}
