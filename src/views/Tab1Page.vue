@@ -19,6 +19,11 @@
         </ion-header>
 
         <ion-content :fullscreen="false">
+            <!-- Pull-to-refresh corrigido -->
+            <ion-refresher slot="fixed" @ionRefresh="handleRefresh($event)">
+                <ion-refresher-content pulling-icon="lines" refreshing-spinner="circles"></ion-refresher-content>
+            </ion-refresher>
+
             <!-- Loop através dos posts carregados -->
             <ion-card v-for="post in posts" :key="post.id"
                 style="margin: 0; border-radius: 0; box-shadow: none; margin-bottom: 0;" class="fade-in">
@@ -97,6 +102,9 @@ import {
     IonInfiniteScroll,
     IonInfiniteScrollContent,
     InfiniteScrollCustomEvent,
+    IonRefresher,
+    IonRefresherContent,
+    RefresherCustomEvent // Importação importante
 } from '@ionic/vue';
 import {
     heartOutline,
@@ -217,6 +225,13 @@ const allPosts: Post[] = [
 const posts = ref<Post[]>([]);
 const pageSize = 4;
 let page = 0;
+
+const handleRefresh = (event: RefresherCustomEvent) => {
+    setTimeout(() => {
+        window.location.reload(); // Simula uma atualização completa
+        event.detail.complete();
+    }, 1000);
+};
 
 const loadMore = (event: InfiniteScrollCustomEvent) => {
     page++; const start = (page - 1) * pageSize; const end = page * pageSize;

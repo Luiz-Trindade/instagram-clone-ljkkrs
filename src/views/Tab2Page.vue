@@ -8,6 +8,11 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
+      <!-- Pull-to-refresh -->
+      <ion-refresher slot="fixed" @ionRefresh="doRefresh">
+        <ion-refresher-content pulling-icon="lines" refreshing-spinner="circles"></ion-refresher-content>
+      </ion-refresher>
+
       <!-- Categorias -->
       <div class="categories-container">
         <ion-chip v-for="category in categories" :key="category" outline>
@@ -35,7 +40,10 @@ import {
   IonContent,
   IonChip,
   IonLabel,
-  IonIcon
+  IonIcon,
+  IonRefresher,
+  IonRefresherContent,
+  RefresherCustomEvent // Importação importante
 } from '@ionic/vue';
 import { playCircleOutline, search } from 'ionicons/icons';
 
@@ -78,6 +86,13 @@ const posts = [
   { id: 6, image: 'https://picsum.photos/300/300?random=6', type: 'image', username: 'user6' },
   // Adicione mais posts conforme necessário
 ];
+
+function doRefresh(event: RefresherCustomEvent) {
+  setTimeout(() => {
+    window.location.reload(); // Simula uma atualização completa
+    event.detail.complete();
+  }, 1000);
+}
 </script>
 
 <style scoped>
