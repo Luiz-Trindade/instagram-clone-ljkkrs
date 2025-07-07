@@ -103,11 +103,3 @@ Desenvolvedor Full Stack
 ## 📝 Licença
 
 MIT © 2025 Luiz Trindade
-
----
-
-### 👇 Para deixar seu projeto ainda melhor:
-- Adicione uma pasta `screenshots/` e renomeie as imagens que você enviou como `feed.jpg` e `explore.jpg`, por exemplo.
-- Use o GitHub Pages ou Netlify para mostrar uma versão web do app (mesmo que só o layout).
-
-Se quiser, posso gerar também o `package.json`, `capacitor.config.ts` ou estrutura inicial de pastas. É só pedir.
