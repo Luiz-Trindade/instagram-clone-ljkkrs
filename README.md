@@ -7,10 +7,10 @@ Este projeto é um clone funcional da interface do Instagram, desenvolvido com f
 ## 🖼️ Demonstrações
 
 ### 🔻 Feed
-<img src="./screenshots/feed.jpg" alt="Feed do app" width="250"/>
+<img src="./screenshots/feed.jpeg" alt="Feed do app" width="250"/>
 
 ### 🔍 Explorar
-<img src="./screenshots/explore.jpg" alt="Explorar do app" width="250"/>
+<img src="./screenshots/explore.jpeg" alt="Explorar do app" width="250"/>
 
 ---
 
