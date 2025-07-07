@@ -39,28 +39,28 @@ Este projeto é um clone funcional da interface do Instagram, desenvolvido com f
 
 1. **Clone o projeto**
    ```bash
-   git clone https://github.com/seu-usuario/instaclone.git
-   cd instaclone
-````
+      git clone https://github.com/seu-usuario/instaclone.git
+      cd instaclone
+   ```
 
 2. **Instale as dependências**
 
    ```bash
-   npm install
+      npm install
    ```
 
 3. **Rode em ambiente web**
 
    ```bash
-   ionic serve
+      ionic serve
    ```
 
 4. **Rode no Android**
 
    ```bash
-   ionic build
-   npx cap sync
-   npx cap open android
+      ionic build
+      npx cap sync
+      npx cap open android
    ```
 
 ---
@@ -68,15 +68,15 @@ Este projeto é um clone funcional da interface do Instagram, desenvolvido com f
 ## 📁 Estrutura de Pastas
 
 ```
-src/
-├── components/
-├── views/
-│   ├── FeedPage.vue
-│   ├── ExplorePage.vue
-│   └── ...
-├── router/
-├── App.vue
-└── main.ts
+   src/
+   ├── components/
+   ├── views/
+   │   ├── FeedPage.vue
+   │   ├── ExplorePage.vue
+   │   └── ...
+   ├── router/
+   ├── App.vue
+   └── main.ts
 ```
 
 ---
@@ -103,8 +103,6 @@ Desenvolvedor Full Stack
 ## 📝 Licença
 
 MIT © 2025 Luiz Trindade
-
-```
 
 ---
 
